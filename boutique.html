@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Boutique</title>   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-lightning-charge-fill"></i> TechStore
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="boutique.html">Boutique</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="bi bi-cart3 fs-5"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-light py-5">
+        <div class="container">
+            <h1 class="text-center">Notre Boutique</h1>
+            <p class="text-center text-muted">Découvrez notre sélection de produits électroniques et électroménagers</p>
+        </div>
+    </section>
+
+    <section class="py-4 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <a href="#tous" class="btn btn-outline-primary active">Tous</a>
+                <a href="#phones" class="btn btn-outline-primary">Téléphones & Tablettes</a>
+                <a href="#computers" class="btn btn-outline-primary">Ordinateurs</a>
+                <a href="#tv" class="btn btn-outline-primary">TV & Audio</a>
+                <a href="#appliances" class="btn btn-outline-primary">Électroménager</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/iphone15.jpg" class="card-img-top" alt="iPhone 15 Pro">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">iPhone 15 Pro</h5>
+                            <p class="card-text text-muted small flex-grow-1">128GB, Titane Noir</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">650.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/samsung-s24.jpg" class="card-img-top" alt="Samsung Galaxy S24">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Samsung Galaxy S24</h5>
+                            <p class="card-text text-muted small flex-grow-1">256GB, Gris Titane</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">490.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/ipad.jpg" class="card-img-top" alt="iPad Air">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">iPad Air</h5>
+                            <p class="card-text text-muted small flex-grow-1">128GB, WiFi</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">380.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/macbook.jpg" class="card-img-top" alt="MacBook Pro">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">MacBook Pro M3</h5>
+                            <p class="card-text text-muted small flex-grow-1">14", 512GB SSD</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">1.325.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/dell-laptop.jpg" class="card-img-top" alt="Dell XPS">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Dell XPS 15</h5>
+                            <p class="card-text text-muted small flex-grow-1">Intel i7, 16GB RAM</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">980.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/hp-desktop.jpg" class="card-img-top" alt="HP Desktop">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">HP Desktop Pro</h5>
+                            <p class="card-text text-muted small flex-grow-1">Intel i5, 512GB SSD</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">490.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/samsung-tv.jpg" class="card-img-top" alt="TV Samsung">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">TV Samsung 55"</h5>
+                            <p class="card-text text-muted small flex-grow-1">4K QLED, Smart TV</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">490.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/lg-tv.jpg" class="card-img-top" alt="TV LG">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">TV LG 65" OLED</h5>
+                            <p class="card-text text-muted small flex-grow-1">4K HDR, WebOS</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">870.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/soundbar.jpg" class="card-img-top" alt="Barre de son">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Barre de Son Sony</h5>
+                            <p class="card-text text-muted small flex-grow-1">Dolby Atmos, 400W</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">217.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/dyson.jpg" class="card-img-top" alt="Aspirateur Dyson">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Dyson V15</h5>
+                            <p class="card-text text-muted small flex-grow-1">Aspirateur sans fil</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">326.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/nespresso.jpg" class="card-img-top" alt="Machine Nespresso">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Nespresso Vertuo</h5>
+                            <p class="card-text text-muted small flex-grow-1">Machine à café</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">108.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/lg-fridge.jpg" class="card-img-top" alt="Réfrigérateur LG">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Réfrigérateur LG</h5>
+                            <p class="card-text text-muted small flex-grow-1">400L, A+++</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">435.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/microwave.jpg" class="card-img-top" alt="Micro-ondes Samsung">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Micro-ondes Samsung</h5>
+                            <p class="card-text text-muted small flex-grow-1">28L, Grill</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">87.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/washing-machine.jpg" class="card-img-top" alt="Lave-linge Bosch">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Lave-linge Bosch</h5>
+                            <p class="card-text text-muted small flex-grow-1">8kg, A+++</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">543.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/air-conditioner.jpg" class="card-img-top" alt="Climatiseur">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Climatiseur Daikin</h5>
+                            <p class="card-text text-muted small flex-grow-1">12000 BTU, Inverter</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">652.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/blender.jpg" class="card-img-top" alt="Mixeur">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Mixeur Philips</h5>
+                            <p class="card-text text-muted small flex-grow-1">700W, 2L</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="h5 mb-0 text-primary">54.000 FCFA</span>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="cartModalLabel">
+                        <i class="bi bi-cart3 me-2"></i>Mon Panier
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="images/iphone15.jpg" class="img-fluid rounded" alt="iPhone 15 Pro">
+                                </div>
+                                <div class="col-4">
+                                    <h6 class="mb-1">iPhone 15 Pro</h6>
+                                    <p class="text-muted small mb-0">650.000 FCFA</p>
+                                </div>
+                                <div class="col-3">
+                                    <div class="input-group input-group-sm">
+                                        <button class="btn btn-outline-secondary" type="button">
+                                            <i class="bi bi-dash"></i>
+                                        </button>
+                                        <input type="number" class="form-control text-center" value="1" min="1" max="10">
+                                        <button class="btn btn-outline-secondary" type="button">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-2 text-end">
+                                    <button class="btn btn-danger btn-sm">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="images/samsung-tv.jpg" class="img-fluid rounded" alt="TV Samsung">
+                                </div>
+                                <div class="col-4">
+                                    <h6 class="mb-1">TV Samsung 55"</h6>
+                                    <p class="text-muted small mb-0">490.000 FCFA</p>
+                                </div>
+                                <div class="col-3">
+                                    <div class="input-group input-group-sm">
+                                        <button class="btn btn-outline-secondary" type="button">
+                                            <i class="bi bi-dash"></i>
+                                        </button>
+                                        <input type="number" class="form-control text-center" value="1" min="1" max="10">
+                                        <button class="btn btn-outline-secondary" type="button">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-2 text-end">
+                                    <button class="btn btn-danger btn-sm">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="images/dyson.jpg" class="img-fluid rounded" alt="Dyson V15">
+                                </div>
+                                <div class="col-4">
+                                    <h6 class="mb-1">Dyson V15</h6>
+                                    <p class="text-muted small mb-0">326.000 FCFA</p>
+                                </div>
+                                <div class="col-3">
+                                    <div class="input-group input-group-sm">
+                                        <button class="btn btn-outline-secondary" type="button">
+                                            <i class="bi bi-dash"></i>
+                                        </button>
+                                        <input type="number" class="form-control text-center" value="1" min="1" max="10">
+                                        <button class="btn btn-outline-secondary" type="button">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-2 text-end">
+                                    <button class="btn btn-danger btn-sm">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Sous-total</span>
+                                <span>1.466.000 FCFA</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Livraison</span>
+                                <span class="text-success">Gratuite</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <strong>Total</strong>
+                                <strong class="text-primary fs-5">1.466.000 FCFA</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuer mes achats</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmModal">
+                        <i class="bi bi-credit-card me-2"></i>Passer la commande
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="confirmModalLabel">
+                        <i class="bi bi-check-circle-fill me-2"></i>Commande Confirmée
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <i class="bi bi-cart-check-fill text-success" style="font-size: 4rem;"></i>
+                    <h4 class="mt-3 mb-3">Merci pour votre commande !</h4>
+                    <p class="text-muted">Nous avons bien reçu votre demande.</p>
+                    <div class="alert alert-info">
+                        <strong>Total :</strong> 1.466.000 FCFA
+                    </div>
+                    <p class="small text-muted">Un email de confirmation vous sera envoyé sous peu avec les détails de votre commande.</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a href="index.html" class="btn btn-primary">Retour à l'accueil</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5><i class="bi bi-lightning-charge-fill"></i> TechStore</h5>
+                    <p>Votre expert en électronique et électroménager depuis plus de 20 ans.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Liens Rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Accueil</a></li>
+                        <li><a href="boutique.html" class="text-white-50">Boutique</a></li>
+                        <li><a href="about.html" class="text-white-50">À Propos</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Nous Contacter</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li><i class="bi bi-geo-alt"></i> 2945 Rue 29.45, Somgandé Ouagadougou</li>
+                        <li><i class="bi bi-telephone"></i> +226 77 97 79 63</li>
+                        <li><i class="bi bi-envelope"></i> bonaventureloue@gmail.com</li>
+                        <li><i class="bi bi-clock"></i> Lun-Sam: 8h-20h</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 TechStore. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
